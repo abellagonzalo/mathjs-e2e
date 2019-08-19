@@ -1,12 +1,14 @@
-.PHONY setup
+.PHONY: setup
 setup:
 	python3 -m virtualenv venv
-	source venv/bin/activate
+	@echo "-----------------------------------------"
+	@echo "run this command: source venv/bin/activate"
+	@echo "-----------------------------------------"
 
-.PHONY install
+.PHONY: install
 install:
 	pip install -r requirements.txt
 
-.PHONY test
+.PHONY: test
 test:
 	pytest tests

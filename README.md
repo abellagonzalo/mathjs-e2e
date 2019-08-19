@@ -18,8 +18,9 @@ in different files and grouped by functionality.
 I assume the reviewer has a full python3 environment installed and Makefile. 
 
 ``` bash
-make setup    # Create and activate virtualenv
-make install  # Install packages with pip
-make tests    # Run tests with pytest
+make setup                  # Create and activate virtualenv
+source venv/bin/activate    # Activate virtualenv
+make install                # Install packages with pip
+make tests                  # Run tests with pytest
 ```
 
